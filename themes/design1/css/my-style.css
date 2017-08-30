@@ -121,7 +121,7 @@ body{
         font-family: Montserrat, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-
+        
     }
     .text-field-2 {
         width:71%;
@@ -130,6 +130,8 @@ body{
         font-family: Montserrat, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
     }
     ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
       color: #b3b0b0;
@@ -238,10 +240,13 @@ body{
     line-height: inherit;
     text-decoration: none;
     cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .more-button {
     background-color:#D3D3D3;
     float: right;
+    border-radius: 5px;
 }
 
 /* left column */
@@ -293,7 +298,8 @@ body{
     max-width: 150px;
     height: auto;
     margin-right: 2%;
-    margin-top: 10px
+    margin-top: 10px;
+    border-radius: 5px;
   }
   .feed .text-block a:hover{
     color: #3898EC;
@@ -310,6 +316,12 @@ body{
     }
     .tab-menu li{
       float:left;
+    }
+    .tab-menu li a:first-child {
+      border-top-left-radius: 5px;
+    }
+    .tab-menu li a:last-child {
+      border-top-right-radius: 5px;
     }
     .current-tab {
         background-color: #24a7ff
@@ -343,7 +355,11 @@ body{
       margin-top: 21px;
     }
   /* tabs */
-
+  .tab-pane {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
   .heading-2 {
       margin-top: 0px;
       margin-bottom: 3px;
@@ -399,6 +415,9 @@ body{
 
   .tab-pane {
       background-color: #fff;
+  }
+  .tab-pane .search-result {
+    border-radius: inherit;
   }
   .search-result{
     float: left;
@@ -694,6 +713,7 @@ body{
   .newsletter-form{
     width: 251px;
     height: 40px;
+    border-radius: 5px;
   }
   .submit-newsletter{
     height: 40px;
@@ -701,6 +721,7 @@ body{
     background: #3898ec;
     border: none;
     color: #fff;
+    border-radius: 5px;
   }
   .social-icons{
     padding-top: 14px;
