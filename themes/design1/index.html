@@ -1,403 +1,247 @@
-<!doctype html>
+<div class="row"
+    xmlns:i18n="http://exist-db.org/xquery/i18n" 
+    data-template="templates:surround" 
+    data-template-with="http://localhost/gwtemplates/themes/{name}/tmpl-default.xhtml" 
+    data-template-at="content">
+ 	<!-- left column menu -->
+	<div class="left col-3">
+		<div class="w-clearfix white-wrapper">
+		 	<h2 class="small-heading">Date</h2>
+			<ul class="since">
+				<li><a href="#">Since 2017 100 + </a></li>
+				<li><a href="#">Since 2016 600 + </a></li>
+				<li><a href="#">Since 2015 400 + </a></li>
+				<li class="date-selection">
+					<div>
+						<a href="#" class="between-button">+ Between 
+						</a> <br />
+						<input type="text" 
+							name="daterange" 
+							value="01/01/2017 - 01/31/2017" 
+							style="display: none;" class="between-date" />
 
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width">
-	<meta name="ICBM" content="">
-	<meta name="geo.position" content="">
-	<meta name="geo.placename" content="">
-	<meta name="geo.region" content="">
-	<meta name="DC.Language" content="en">
-	<title>African Law Library</title>
-	<meta name="description" content="">
+						<a href="#" class="this-date-button">+ This date </a>
+						<input type="text" name="thisdate" 
+							value="01/01/2017" style="display: none;" class="this-date" />
+						
+					</div>
+				</li>
+			</ul>
 
-	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/my-style.css">
+			<div class="grey-rule"></div>
 
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="js/moment.min.js"></script>
-	 
-	<script type="text/javascript" src="js/daterangepicker.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+			<h2 class="small-heading">Legal documents</h2>
+			<ul>
+				<li><a href="#">Legislation 10000 + </a></li>
+				<li><a href="#">Case law 20000 + </a></li>
+				<li><a href="#">Reports 1000 + </a></li>
+				<li><a href="#">Articles 11000 + </a></li>
+				<li class="click-more">
+					+ More 
+						<ul class="see-more">
+							<li><a href="#">dummy link</a></li>
+							<li><a href="#">dummy link</a></li>
+							<li><a href="#">dummy link</a></li>
+							<li><a href="#">dummy link</a></li>
+						</ul>
+				</li>
+			</ul>
+			<div class="grey-rule"></div>
 
-	<script src="js/scripts.js"></script>
+			<h2 class="small-heading">Countries</h2>
+		 	<ul>
+		 		<li><a href="#">Kenya 500 + </a></li>
+		 		<li><a href="#">Burkina Faso 200 +</a></li>
+		 		<li><a href="#">Togo 200 +</a></li>
+		 		<li><a href="#">Togo 200 +</a></li>
+		 		<li class="click-more">
+					 + More 
+						<ul class="see-more">
+							<li><a href="#">dummy link</a></li>
+							<li><a href="#">dummy link</a></li>
+							<li><a href="#">dummy link</a></li>
+							<li><a href="#">dummy link</a></li>
+						</ul>
+				</li>
+			</ul>
 
-	<!--[if lt IE 9]>
-    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-	<![endif]-->
-</head>
+			<div class="grey-rule"></div>
 
-<body>
-	
-	<!-- this is the multicolor bar at top -->
-	<div class="div-block-2 w-clearfix" id="top1">
-	  	<div class="div-block-4 col-2"></div>
-	  	<div class="div-block-5 col-2"></div>
-	  	<div class="div-block-6 col-2"></div>
-	  	<div class="div-block-7 col-2"></div>
-	  	<div class="div-block-8 col-2"></div>
-	  	<div class="div-block-9 col-2"></div>
-	  	<div class="div-block-10 col-2"></div>
+			<h2 class="small-heading">Partners</h2>
+			<ul>
+		 		<li><a href="#">Kenya 500 + </a></li>
+		 		<li><a href="#">Burkina Faso 200 +</a></li>
+		 		<li><a href="#">Togo 200 +</a></li>
+		 		<li><a href="#">Togo 200 +</a></li>
+		 		<li class="click-more">
+					+ More 
+						<ul class="see-more">
+							<li><a href="#">dummy link</a></li>
+							<li><a href="#">dummy link</a></li>
+							<li><a href="#">dummy link</a></li>
+							<li><a href="#">dummy link</a></li>
+						</ul>
+				</li>
+			</ul>
+			 
+		   <div class="grey-rule"></div>
+
+			<h2 class="small-heading">Subjects</h2>
+			<ul>
+		 		<li><a href="#">Social Justice 900 +</a></li>
+		 		<li><a href="#">Economic Model 20 +</a></li>
+		 		<li><a href="#">Constitutional reform 90 +</a></li>
+		 		<li class="click-more">
+					+ More
+						<ul class="see-more">
+							<li><a href="#">dummy link</a></li>
+							<li><a href="#">dummy link</a></li>
+							<li><a href="#">dummy link</a></li>
+							<li><a href="#">dummy link</a></li>
+						</ul>
+				</li>
+			</ul>
+			
+			<div class="grey-rule"></div>
+
+			<p class="cc-law-libray">The African Law Library</p>
+		</div>
 	</div>
 
-	<!-- this is the navigation bar -->
-	<header class="navigation-bar">
-		
-		<div class="container">
-			<a class="nav-brand" href="/">
-				<img src="images/logo.png" width="75">
-			</a>
-	    	<div class="logotype">
-	        	<h1>African Law Library</h1>
-	        	<h2>innovative access to law</h2>
-	    	</div>
-	    	<div class="mobile-button">
-	        	<img src="images/th-menu.png">
-	    	</div>
-	    	<div class="search-form-container col-6">
-	        	<form class="search-form" data-name="Email Form" id="email-form" name="email-form">
-	            	<div class="div-block w-clearfix">
-	            		<input class="text-field-2" data-name="Name" id="search" maxlength="256" name="name" placeholder="Search " type="text">
-	            		<input class="submit-button w-button" data-wait="Please wait..." type="submit" value="GO">
-	            		<a href="#"><img class="bell" src="images/bell.png" width="27"></a>
-	            		<div class="the-result" style="display: none;">
-	            			<a href="">economic</a><br>
-	            			<a href="">economical</a><br>
-	            			<a href="">economic crisis</a><br>
-	            			<div class="left">	
-		            			<div>
-		            				<h2>Legislation</h2>
-		            				<a href="#"><i>Kenya:</i> Mixed <b>Economic</b> activity. Act 1991</a>
-		            				<a href="#"><i>Nigeria:</i> Mixed <b>Economic</b> activity. Act 1991</a>
-		            				<a href="#"><i>Tanzania:</i> Mixed <b>Economic</b> activity. Act 1991</a>
-		            			</div>
-		            			<div>
-		            				<h2>Case Law</h2>
-		            				<a href="#"><i>Nigeria:</i> <b>Economic</b> crimes. Tribunal vs Jonson Raul Mpyra (2001)</a>
-		            			</div>
-		            			<div>
-		            				<h2>Journal Articles</h2>
-		            				<a href="#">Lorem ipsum</a>
-		            			</div>
-	            			</div>
-	            			<div class="right">
-	            				<div>
-	            					<h4><a href="#">Mixed <b>Economic</b> activity. Act 1991</a></h4>
-	            					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-	            				</div>
-	            				<hr>
-	            				<div>
-	            					<h4><a href="#">Mixed <b>Economic</b> activity. Act 1991</a></h4>
-	            					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-	            				</div>
-
-	            			</div>
-	            		</div>
-	            	</div>
-	        	</form>	         
-	    	</div>
+	<!-- right column content  -->
+	<div class="right col-9">
+		<div class="d-tabs">
+			<ul class="tab-menu">
+				<li><a href="#" class="tab active">In focus</a></li>
+				<li><a href="#" class="tab">Latest</a></li>
+				<li><a href="#" class="tab">Popular</a></li>
+			</ul>
 		</div>
-		
-		<div class="w-nav-overlay" data-wf-ignore=""></div>
-	</header>
-	<!-- this is the main section -->
-	<section class="section">
-		<div class="container">
-			<div class="row">
-				<!-- left column -->
-				<div class="left col-3">
-					<div class="w-clearfix white-wrapper">
-					 	<h2 class="small-heading">Date</h2>
-						<ul class="since">
-							<li><a href="#">Since 2017 100 + </a></li>
-							<li><a href="#">Since 2016 600 + </a></li>
-							<li><a href="#">Since 2015 400 + </a></li>
-							<li class="date-selection">
-								<div>
-									<a href="#" class="between-button">+ Between 
-									</a> <br>
-									<input type="text" name="daterange" value="01/01/2017 - 01/31/2017" style="display: none;" class="between-date" />
-
-									<a href="#" class="this-date-button">+ This date </a>
-									<input type="text" name="thisdate" value="01/01/2017" style="display: none;" class="this-date" />
-									
-								</div>
-							</li>
-						</ul>
-
+		<div class="tabs-content w-tab-content">
+			<div class="tab-pane tab-active" data-tab="t1">
+				<div class="feed w-clearfix">
+						<h2>Theme of the month</h2>
+					     <!--
+				        <div class="text-block">
+							<a href="#"> AUTOR NAME </a> &#160;| &#160; <a href="#">CATEGORY</a> &#160;| &#160;<a href="#">July 25, 2017 </a>
+						</div>
+						-->
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+						<a class="more-button" href="#">more...</a>
 						<div class="grey-rule"></div>
-
-						<h2 class="small-heading">Legal documents</h2>
-						<ul>
-							<li><a href="#">Legislation 10000 + </a></li>
-							<li><a href="#">Case law 20000 + </a></li>
-							<li><a href="#">Reports 1000 + </a></li>
-							<li><a href="#">Articles 11000 + </a></li>
-							<li class="click-more">
-								+ More 
-									<ul class="see-more">
-										<li><a href="#">dummy link</a></li>
-										<li><a href="#">dummy link</a></li>
-										<li><a href="#">dummy link</a></li>
-										<li><a href="#">dummy link</a></li>
-									</ul>
-							</li>
-						</ul>
-						<div class="grey-rule"></div>
-
-						<h2 class="small-heading">Countries</h2>
-					 	<ul>
-					 		<li><a href="#">Kenya 500 + </a></li>
-					 		<li><a href="#">Burkina Faso 200 +</a></li>
-					 		<li><a href="#">Togo 200 +</a></li>
-					 		<li><a href="#">Togo 200 +</a></li>
-					 		<li class="click-more">
-								 + More 
-									<ul class="see-more">
-										<li><a href="#">dummy link</a></li>
-										<li><a href="#">dummy link</a></li>
-										<li><a href="#">dummy link</a></li>
-										<li><a href="#">dummy link</a></li>
-									</ul>
-							</li>
-						</ul>
-
-						<div class="grey-rule"></div>
-
-						<h2 class="small-heading">Partners</h2>
-						<ul>
-					 		<li><a href="#">Kenya 500 + </a></li>
-					 		<li><a href="#">Burkina Faso 200 +</a></li>
-					 		<li><a href="#">Togo 200 +</a></li>
-					 		<li><a href="#">Togo 200 +</a></li>
-					 		<li class="click-more">
-								+ More 
-									<ul class="see-more">
-										<li><a href="#">dummy link</a></li>
-										<li><a href="#">dummy link</a></li>
-										<li><a href="#">dummy link</a></li>
-										<li><a href="#">dummy link</a></li>
-									</ul>
-							</li>
-						</ul>
-						 
-					   <div class="grey-rule"></div>
-
-						<h2 class="small-heading">Subjects</h2>
-						<ul>
-					 		<li><a href="#">Social Justice 900 +</a></li>
-					 		<li><a href="#">Economic Model 20 +</a></li>
-					 		<li><a href="#">Constitutional reform 90 +</a></li>
-					 		<li class="click-more">
-								+ More
-									<ul class="see-more">
-										<li><a href="#">dummy link</a></li>
-										<li><a href="#">dummy link</a></li>
-										<li><a href="#">dummy link</a></li>
-										<li><a href="#">dummy link</a></li>
-									</ul>
-							</li>
-						</ul>
-						
-						<div class="grey-rule"></div>
-
-						<p class="cc-law-libray">The African Law Library</p>
-					</div>
 				</div>
-
-				<!-- right column -->
-				<div class="right col-9">
-					<div class="d-tabs">
-						<ul class="tab-menu">
-							<li><a href="#" class="tab active">In focus</a></li>
-							<li><a href="#" class="tab">Latest</a></li>
-							<li><a href="#" class="tab">Popular</a></li>
-						</ul>
-					</div>
-					<div class="tabs-content w-tab-content">
-						<div class="tab-pane tab-active" data-tab="t1">
-							<div class="feed w-clearfix">
-									<h2>Theme of the month</h2>
-									<div class="text-block">
-										<a href="#"> AUTOR NAME <a> &nbsp;| &nbsp; <a href="#">CATEGORY<a> &nbsp;| &nbsp;<a href="#">July 25, 2017 <a>
-									</div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-									<a class="more-button" href="#">more...</a>
-									<div class="grey-rule"></div>
-							</div>
-							<div class="feed w-clearfix">
-									<h2>This is the second tittle.</h2>
-									<div class="text-block">
-										<a href="#"> AUTOR NAME <a> &nbsp;| &nbsp; <a href="#">CATEGORY<a> &nbsp;| &nbsp;<a href="#">July 25, 2017 <a>
-									</div>
-									<img src="images/thumbnail.jpg">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-									<div class="div-block-18 w-clearfix">
-										<a class="more-button" href="#">more...</a>
-									</div>
-									<div class="grey-rule"></div>
-							</div>
-							<div class="feed w-clearfix">
-									<h2>This is the tittle after the second</h2>
-									<div class="text-block">
-										<a href="#"> AUTOR NAME <a> &nbsp;| &nbsp; <a href="#">CATEGORY<a> &nbsp;| &nbsp;<a href="#">July 25, 2017 <a>
-									</div>
-									<img src="images/thumbnail.jpg">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-									<div class="div-block-18 w-clearfix">
-										<a class="more-button" href="#">more...</a>
-									</div>
-									<div class="grey-rule"></div>
-							</div>
-							<div class="button-wrapper">
-								<a class="button w-button" href="/all-posts">More posts&nbsp;→</a>
-							</div>
+			    
+			    <div data-template="app:docs-summary" data-template-lang="eng" />
+			    
+			    <!--
+				<div class="feed w-clearfix">
+						<h2>This is the second tittle.</h2>
+						<div class="text-block">
+							<a href="#"> AUTOR NAME </a> &#160;| &#160; <a href="#">CATEGORY</a> &#160;| &#160;<a href="#">July 25, 2017 </a>
 						</div>
-
-						<div class="tab-pane" data-tab="t2" style="display: none;">
-							<div class="feed w-clearfix">
-									<h2>Latest Theme of the month</h2>
-									<div class="text-block">
-										<a href="#"> AUTOR NAME <a> &nbsp;| &nbsp; <a href="#">CATEGORY<a> &nbsp;| &nbsp;<a href="#">July 25, 2017 <a>
-									</div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-									<a class="more-button" href="#">more...</a>
-									<div class="grey-rule"></div>
-							</div>
-							<div class="feed w-clearfix">
-									<h2>This is the second tittle.</h2>
-									<div class="text-block">
-										<a href="#"> AUTOR NAME <a> &nbsp;| &nbsp; <a href="#">CATEGORY<a> &nbsp;| &nbsp;<a href="#">July 25, 2017 <a>
-									</div>
-									<img src="images/thumbnail.jpg">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-									<div class="div-block-18 w-clearfix">
-										<a class="more-button" href="#">more...</a>
-									</div>
-									<div class="grey-rule"></div>
-							</div>
-							<div class="feed w-clearfix">
-									<h2>This is the tittle after the second</h2>
-									<div class="text-block">
-										<a href="#"> AUTOR NAME <a> &nbsp;| &nbsp; <a href="#">CATEGORY<a> &nbsp;| &nbsp;<a href="#">July 25, 2017 <a>
-									</div>
-									<img src="images/thumbnail.jpg">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-									<div class="div-block-18 w-clearfix">
-										<a class="more-button" href="#">more...</a>
-									</div>
-									<div class="grey-rule"></div>
-							</div>
-							<div class="button-wrapper">
-								<a class="button w-button" href="/all-posts">More posts&nbsp;→</a>
-							</div>
+						<img src="/gwtemplates/themes/design1/resources/images/thumbnail.jpg" />
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+						<div class="div-block-18 w-clearfix">
+							<a class="more-button" href="#">more...</a>
 						</div>
-
-						<div class="tab-pane" data-tab="t3" style="display: none;">
-							<div class="feed w-clearfix">
-									<h2>Popular Theme of the month</h2>
-									<div class="text-block">
-										<a href="#"> AUTOR NAME <a> &nbsp;| &nbsp; <a href="#">CATEGORY<a> &nbsp;| &nbsp;<a href="#">July 25, 2017 <a>
-									</div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-									<a class="more-button" href="#">more...</a>
-									<div class="grey-rule"></div>
-							</div>
-							<div class="feed w-clearfix">
-									<h2>This is the second tittle.</h2>
-									<div class="text-block">
-										<a href="#"> AUTOR NAME <a> &nbsp;| &nbsp; <a href="#">CATEGORY<a> &nbsp;| &nbsp;<a href="#">July 25, 2017 <a>
-									</div>
-									<img src="images/thumbnail.jpg">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-									<div class="div-block-18 w-clearfix">
-										<a class="more-button" href="#">more...</a>
-									</div>
-									<div class="grey-rule"></div>
-							</div>
-							<div class="feed w-clearfix">
-									<h2>This is the tittle after the second</h2>
-									<div class="text-block">
-										<a href="#"> AUTOR NAME <a> &nbsp;| &nbsp; <a href="#">CATEGORY<a> &nbsp;| &nbsp;<a href="#">July 25, 2017 <a>
-									</div>
-									<img src="images/thumbnail.jpg">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-									<div class="div-block-18 w-clearfix">
-										<a class="more-button" href="#">more...</a>
-									</div>
-									<div class="grey-rule"></div>
-							</div>
-							<div class="button-wrapper">
-								<a class="button w-button" href="/all-posts">More posts&nbsp;→</a>
-							</div>
-						</div>	
-					</div>
+						<div class="grey-rule"></div>
+				</div>
+				<div class="feed w-clearfix">
+						<h2>This is the tittle after the second</h2>
+						<div class="text-block">
+							<a href="#"> AUTOR NAME </a> &#160;| &#160; <a href="#">CATEGORY</a> &#160;| &#160;<a href="#">July 25, 2017 </a>
+						</div>
+						<img src="/gwtemplates/themes/design1/resources/images/thumbnail.jpg" />
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+						<div class="div-block-18 w-clearfix">
+							<a class="more-button" href="#">more...</a>
+						</div>
+						<div class="grey-rule"></div>
+				</div>
+				-->
+				<div class="button-wrapper">
+					<a class="button w-button" href="/all-posts">More posts&#160;→</a>
 				</div>
 			</div>
-		</div>
-	</section>
 
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-4">
-					<ul>
-						<li><a href="">Policies</a></li>
-						<li><a href="">Privacy policy</a></li>
-						<li><a href="">Copyright</a></li>
-						<li><a href="">Terms of Service</a></li>
-					</ul>
-				</div>
-
-				<div class="col-4">
-					<ul>
-						<li><a href="">About Us</a></li>
-						<li><a href="">Who we are </a></li>
-						<li><a href="">What we do</a></li>
-						<li><a href="">FAQ</a></li>
-						<li><a href="">Blog</a></li>
-						<li><a href="">Contact Us</a></li>
-					</ul>
-				</div>
-
-				<div class="col-4">
-					<p>Join over 14,000 people who receive weekly information</p>
-					<div class="w-form">
-						<form class="w-clearfix" data-name="Email Form 2" id="email-form-2" name="email-form-2">
-							<input class="newsletter-form" data-name="Email" id="email" maxlength="256" name="email" placeholder="Enter your email address" required="required" type="email">
-							<input class="submit-newsletter" data-wait="Please wait..." type="submit" value=">">
-						</form>
-						<div class="form-done">
-							<div>Thank you! Your submission has been received!</div>
+			<div class="tab-pane" data-tab="t2" style="display: none;">
+				<div class="feed w-clearfix">
+						<h2>Latest Theme of the month</h2>
+						<div class="text-block">
+							<a href="#"> AUTOR NAME </a> &#160;| &#160; <a href="#">CATEGORY</a> &#160;| &#160;<a href="#">July 25, 2017 </a>
 						</div>
-						<div class="form-fail">
-							<div>Oops! Something went wrong while submitting the form</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+						<a class="more-button" href="#">more...</a>
+						<div class="grey-rule"></div>
+				</div>
+				<div class="feed w-clearfix">
+						<h2>This is the second tittle.</h2>
+						<div class="text-block">
+							<a href="#"> AUTOR NAME </a> &#160;| &#160; <a href="#">CATEGORY</a> &#160;| &#160;<a href="#">July 25, 2017 </a>
 						</div>
-					</div>
+						<img src="/gwtemplates/themes/design1/resources/images/thumbnail.jpg" />
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+						<div class="div-block-18 w-clearfix">
+							<a class="more-button" href="#">more...</a>
+						</div>
+						<div class="grey-rule"></div>
+				</div>
+				<div class="feed w-clearfix">
+						<h2>This is the tittle after the second</h2>
+						<div class="text-block">
+							<a href="#"> AUTOR NAME </a> &#160;| &#160; <a href="#">CATEGORY</a> &#160;| &#160;<a href="#">July 25, 2017 </a>
+						</div>
+						<img src="/gwtemplates/themes/design1/resources/images/thumbnail.jpg" />
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+						<div class="div-block-18 w-clearfix">
+							<a class="more-button" href="#">more...</a>
+						</div>
+						<div class="grey-rule"></div>
+				</div>
+				<div class="button-wrapper">
+					<a class="button w-button" href="/all-posts">More posts&#160;→</a>
 				</div>
 			</div>
+
+			<div class="tab-pane" data-tab="t3" style="display: none;">
+				<div class="feed w-clearfix">
+						<h2>Popular Theme of the month</h2>
+						<div class="text-block">
+							<a href="#"> AUTOR NAME </a> &#160;| &#160; <a href="#">CATEGORY</a> &#160;| &#160;<a href="#">July 25, 2017 </a>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+						<a class="more-button" href="#">more...</a>
+						<div class="grey-rule"></div>
+				</div>
+				<div class="feed w-clearfix">
+						<h2>This is the second tittle.</h2>
+						<div class="text-block">
+							<a href="#"> AUTOR NAME </a> &#160;| &#160; <a href="#">CATEGORY</a> &#160;| &#160;<a href="#">July 25, 2017 </a>
+						</div>
+						<img src="/gwtemplates/themes/design1/resources/images/thumbnail.jpg" />
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+						<div class="div-block-18 w-clearfix">
+							<a class="more-button" href="#">more...</a>
+						</div>
+						<div class="grey-rule"></div>
+				</div>
+				<div class="feed w-clearfix">
+						<h2>This is the tittle after the second</h2>
+						<div class="text-block">
+							<a href="#"> AUTOR NAME </a> &#160;| &#160; <a href="#">CATEGORY</a> &#160;| &#160;<a href="#">July 25, 2017 </a>
+						</div>
+						<img src="/gwtemplates/themes/design1/resources/images/thumbnail.jpg" />
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+						<div class="div-block-18 w-clearfix">
+							<a class="more-button" href="#">more...</a>
+						</div>
+						<div class="grey-rule"></div>
+				</div>
+				<div class="button-wrapper">
+					<a class="button w-button" href="/all-posts">More posts&#160;→</a>
+				</div>
+			</div>	
 		</div>
-		<div class="social-icons">
-			<div class="social-link-group">
-				<a class="social-icon-link" href="#">
-					<img src="images/face.svg" width="25">
-				</a>
-				<a class="social-icon-link" href="#">
-					<img src="images/instagram.svg" width="25">
-				</a>
-				<a class="social-icon-link" href="#">
-					<img src="images/twitter.svg" width="25">
-				</a>
-				<a class="social-icon-link" href="#">
-					<img src="images/linkedin.svg" width="25">
-				</a>
-			</div>
-			<h5>THE AFRICAN LAW LIBRARY</h5>
-		</div>
-	</footer>
- 	 
-</body>
-</html>
+	</div>
+
+</div>
