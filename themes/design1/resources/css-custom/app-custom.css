@@ -1,0 +1,22 @@
+.pdf {height:500px; 
+    width:200%; /** 2 columns **/
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+.paginations::before{
+    background: none !important;
+}
+
+.feed-title {
+    margin-bottom: 0px;
+    padding: 14px 21px 0px;
+}
+
+.results-title {
+    padding:10px 10px 10px;
+}
+
+.results-title h1 {
+    font-size: 27px;
+}

@@ -1,0 +1,196 @@
+<div class="row"
+xmlns:i18n="http://exist-db.org/xquery/i18n" 
+data-template="templates:surround" 
+data-template-with="http://localhost/gwtemplates/themes/{name}/tmpl-default.xhtml" 
+data-template-at="content">
+ <!-- left column menu -->
+<div class="left col-3">
+    <div class="w-clearfix white-wrapper">
+         <h2 class="small-heading">Date</h2>
+        <ul class="since">
+            <li><a href="#">Since 2017 100 + </a></li>
+            <li><a href="#">Since 2016 600 + </a></li>
+            <li><a href="#">Since 2015 400 + </a></li>
+            <li class="date-selection">
+                <div>
+                    <a href="#" class="between-button">+ Between 
+                    </a> <br />
+                    <input type="text" 
+                        name="daterange" 
+                        value="01/01/2017 - 01/31/2017" 
+                        style="display: none;" class="between-date" />
+
+                    <a href="#" class="this-date-button">+ This date </a>
+                    <input type="text" name="thisdate" 
+                        value="01/01/2017" style="display: none;" class="this-date" />
+                    
+                </div>
+            </li>
+        </ul>
+
+        <div class="grey-rule"></div>
+
+        <h2 class="small-heading">Legal documents</h2>
+        <ul>
+            <li><a href="#">Legislation 10000 + </a></li>
+            <li><a href="#">Case law 20000 + </a></li>
+            <li><a href="#">Reports 1000 + </a></li>
+            <li><a href="#">Articles 11000 + </a></li>
+            <li class="click-more">
+                + More 
+                    <ul class="see-more">
+                        <li><a href="#">dummy link</a></li>
+                        <li><a href="#">dummy link</a></li>
+                        <li><a href="#">dummy link</a></li>
+                        <li><a href="#">dummy link</a></li>
+                    </ul>
+            </li>
+        </ul>
+        <div class="grey-rule"></div>
+
+        <h2 class="small-heading">Countries</h2>
+         <ul>
+             <li><a href="#">Kenya 500 + </a></li>
+             <li><a href="#">Burkina Faso 200 +</a></li>
+             <li><a href="#">Togo 200 +</a></li>
+             <li><a href="#">Togo 200 +</a></li>
+             <li class="click-more">
+                 + More 
+                    <ul class="see-more">
+                        <li><a href="#">dummy link</a></li>
+                        <li><a href="#">dummy link</a></li>
+                        <li><a href="#">dummy link</a></li>
+                        <li><a href="#">dummy link</a></li>
+                    </ul>
+            </li>
+        </ul>
+
+        <div class="grey-rule"></div>
+
+        <h2 class="small-heading">Partners</h2>
+        <ul>
+             <li><a href="#">Kenya 500 + </a></li>
+             <li><a href="#">Burkina Faso 200 +</a></li>
+             <li><a href="#">Togo 200 +</a></li>
+             <li><a href="#">Togo 200 +</a></li>
+             <li class="click-more">
+                + More 
+                    <ul class="see-more">
+                        <li><a href="#">dummy link</a></li>
+                        <li><a href="#">dummy link</a></li>
+                        <li><a href="#">dummy link</a></li>
+                        <li><a href="#">dummy link</a></li>
+                    </ul>
+            </li>
+        </ul>
+         
+       <div class="grey-rule"></div>
+
+        <h2 class="small-heading">Subjects</h2>
+        <ul>
+             <li><a href="#">Social Justice 900 +</a></li>
+             <li><a href="#">Economic Model 20 +</a></li>
+             <li><a href="#">Constitutional reform 90 +</a></li>
+             <li class="click-more">
+                + More
+                    <ul class="see-more">
+                        <li><a href="#">dummy link</a></li>
+                        <li><a href="#">dummy link</a></li>
+                        <li><a href="#">dummy link</a></li>
+                        <li><a href="#">dummy link</a></li>
+                    </ul>
+            </li>
+        </ul>
+        
+        <div class="grey-rule"></div>
+
+        <p class="cc-law-libray">The African Law Library</p>
+    </div>
+</div>
+
+<!-- right column content  -->
+<div class="right col-9">
+    <div class="search-result w-tabs-content w-tab-content">
+
+    
+        <div style="padding:10px 10px 10px;">
+            <h1>Themes: <span data-template="app-list:themes-inline" data-template-lang="eng" data-template-themes="">mixed market</span></h1>
+         </div>
+
+         <div data-template="app-list:themes-summary" data-template-lang="eng"
+         data-template-themes="Elections|Candidature" 
+         data-template-count="10" 
+         data-template-from="1"  />
+
+         <!-- 
+         <div class="feed w-clearfix">
+            
+            <h2>Mixed Market Act (2017)</h2>
+            <div class="text-block">
+                <a href="#"> KENYA </a> | <a href="#">LEGISLATION </a> | Date: 21, Jan, 2011 | Code:
+                CAP 42 </div>
+            <p>
+                <strong>Part of the Mixed Market Act 1991</strong>. Work, search within this <a
+                    href="#">work</a>
+                <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
+                interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
+                cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. <a
+                    class="more" href="#">more...</a>
+            </p>
+            <div class="grey-rule"/>
+        </div>
+
+        <div class="feed w-clearfix">
+            <h2>State v/s National Commission (2000)</h2>
+            <div class="text-block">
+                <a href="#"> NIGERIA </a> | <a href="#">CASE LAW </a> | Date: 3, Mar, 2000 | <a
+                    href="#">ENGLISH</a> | Code: NG/09/2000/CL </div>
+            <p>
+                <strong>Part of the Mixed Market Act 1991</strong>. Work, search within this <a
+                    href="#">work</a>
+                <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
+                interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
+                cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. <a
+                    class="more" href="#">more...</a>
+            </p>
+            <div class="grey-rule"/>
+        </div>
+
+        <div class="feed w-clearfix">
+            <h2>State v/s National Commission (2000)</h2>
+            <div class="text-block">
+                <a href="#"> NIGERIA </a> | <a href="#">CASE LAW </a> | Date: 3, Mar, 2000 | <a
+                    href="#">ENGLISH</a> | Code: NG/09/2000/CL </div>
+            <p>
+                <strong>Part of the Mixed Market Act 1991</strong>. Work, search within this <a
+                    href="#">work</a>
+                <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
+                interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
+                cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. <a
+                    class="more" href="#">more...</a>
+            </p>
+            <div class="grey-rule last"/>
+        </div>
+
+
+        <div class="paginations">
+            <a href="#"> &lt; </a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#"> > </a>
+        </div>
+    -->
+
+    </div>
+</div>
+
+
+</div>
