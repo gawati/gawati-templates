@@ -146,22 +146,26 @@
 							</div>
 							-->
 							
-							<div class="tag-cloud" >
+							<div class="tag-cloud" data-template="app-document:tag-cloud" data-template-lang="eng">
 								<!-- data-template="app-document:tag-cloud" data-template-lang="eng" -->
 								<span class="text-span-14">act </span><span class="text-span-13">Administrative </span><span class="text-span-27">assigned </span><span>body </span><span class="text-span-15">cabinet </span><span>case </span><span class="text-span-28">chief </span><span class="text-span-20">citizen </span><span>citizenship </span><span>commission </span><span class="text-span-21">contolled </span><span>copy </span><span>corporate </span><span class="text-span-30">deleted</span> deparment <span class="text-span-22">digital </span><span class="text-span-12">director</span> <span class="text-span-23">document </span>electronic <span>entity </span><span class="text-span-29">exempt </span><span>form </span><span class="text-span-16">generated </span><span class="text-span-17">government </span><span>individual</span> <span class="text-span-19">information </span><span class="text-span-18">justice</span>
 							</div>
 
 							<div class="d-tabs">
 								<ul class="tab-menu">
-									<li><a href="#" class="tab active">Content</a></li>
+									<li><a href="#" class="tab active">Metadata</a></li>
 									<li><a href="#" class="tab">PDF</a></li>
+									<!--
 									<li><a href="#" class="tab">Timeline</a></li>
 									<li><a href="#" class="tab">Metadata</a></li>
+									-->
 								</ul>
 							</div>
 
 							<div class="tabs-content w-tab-content">
+							
 								<div class="tab-pane tab-active" data-tab="t1">
+<!-- 								
 									<div class="feed clearfix">
 										<div class="paginations">
 											<a href="#"> &lt; </a> 
@@ -202,21 +206,38 @@
 										</div>
 
 									</div>
-								</div>
+									 -->
+									 <br />
+									 <div class="feed clearfix">
+										 <!-- <h3>Metadata</h3> -->
+										 <ul class="metadata" data-template="app-document:metadata" data-template-lang="eng">
+											 <li> <strong>Document Number:</strong> KEN/38/388/23</li>
+											 <li> <strong>Official Number:</strong> N°3 of 2017</li>
+											 <li> <strong>Enactment Date:</strong> 21st July 2012</li>
+											 <li> <strong>Commencement Date:</strong> 21st September 2017</li>
+											 <li> <strong>Related Legislation:</strong> <a href="#">FinanceAct 2011 </a> | <a href="#">Food Security Act 1991</a> | <a href="#">Ordinance N° 32/1972</a></li>
+											 <li> <strong>Related Case Law:</strong> <a href="#">Prosecutor vs State Transport Corporation 1973</a> | <a href="#">Kenya Revenue Authority vs Transocean Oilpalms 2001</a> | <a href="#"> Elements Inc vs State Transport Corporation 1974</a> | <a href="#"> State vs Apollo Makdala 1993</a> </li>
+										 </ul>
+										 
+ 
+										 <p></p>
+									 </div>	
 
+								</div>
+						
 								<div class="tab-pane" data-tab="t2" style="display: none;" data-template="app-document:embed-pdf" data-template-lang="eng" data-template-iri="">
-								<div class="feed clearfix">
-									<br />
-									<h3>Annexes</h3>
-									<h5>Short title</h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									<div class="feed clearfix">
+										<br />
+										<h3>Annexes</h3>
+										<h5>Short title</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-								</div>		
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									</div>		
 								</div>
-
+							<!--
 								<div class="tab-pane" data-tab="t3" style="display: none;">
 									<div class="feed clearfix">
 										<div class="timeline">
@@ -267,7 +288,7 @@
 										</div>
 									</div>
 								</div>
-
+							
 								<div class="tab-pane" data-tab="t4" style="display: none;">
 									<br />
 									<div class="feed clearfix">
@@ -285,6 +306,7 @@
 										<p></p>
 									</div>	
 								</div>	
+							-->
 							</div>
 							 
 						</div>
