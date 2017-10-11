@@ -20,3 +20,41 @@
 .results-title h1 {
     font-size: 27px;
 }
+
+/** new ***/
+.cms-page{
+    float: left;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .06);
+    font-family: Montserrat, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: rgba(51, 51, 51, .67);
+  }
+  .cms-page h1{
+    margin-bottom: 7px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: #74737a;
+        font-size: 35px;
+  }
+  .cms-page h1 span{
+    color: #434246;
+    font-size: 33px;
+    font-style: italic;
+  }
+  .cms-page .text-block{
+    font-size:12px;
+  }
+  .cms-page a:hover{
+    color:#3898EC;
+    text-decoration: underline;
+  }
+  .cms-page .more{
+    color:#1abc9c
+  }
+  .cms-page .more:hover{
+    color:#1abc9c;
+    text-decoration: underline;
+  }
