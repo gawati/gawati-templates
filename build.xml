@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="pkg" name="gawati-templates">
+    <xmlproperty file="version.xml"/>
+    <property name="project.version" value="${version(no)}"/>
+    <property name="project.app" value="gawati-templates"/>
+    <property name="build.dir" value="build"/>
+    <target name="pkg">
+        <mkdir dir="${build.dir}"/>
+	<zip basedir="." destfile="${build.dir}/${project.app}-${project.version}.zip" 
+		excludes="${build.dir}/**"
+		includes="themes/design1/**, *.xml, LICENSE, *.md"
+		/>
+    </target>
+</project>
