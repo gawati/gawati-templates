@@ -58,7 +58,7 @@ $(document).ready(function(){
 		$('.this-date').show()
 		$('.between-date').hide()
 	})
-
+	/***
 	$('#search').keyup(function() {
 		if($(this).val() == 'econ' ){
 			$('.the-result').show();
@@ -67,6 +67,7 @@ $(document).ready(function(){
 		    	$('.the-result').hide();
 		    }
 		});
+		 ***/
 	$('section').click(function(){
 		$('.the-result').hide();
 	})
