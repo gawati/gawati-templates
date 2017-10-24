@@ -58,3 +58,7 @@
     color:#1abc9c;
     text-decoration: underline;
   }
+
+  .ui-ac-item {
+    width:400px !important;
+  }

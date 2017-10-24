@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
 	$('.tab-menu li:first-child').click(function(event){
 		$('[data-tab]').hide()
 		$('[data-tab~="t1"]').show()
