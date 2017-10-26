@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
 	$('.tab-menu li:first-child').click(function(event){
 		$('[data-tab]').hide()
 		$('[data-tab~="t1"]').show()
@@ -58,7 +59,7 @@ $(document).ready(function(){
 		$('.this-date').show()
 		$('.between-date').hide()
 	})
-
+	/***
 	$('#search').keyup(function() {
 		if($(this).val() == 'econ' ){
 			$('.the-result').show();
@@ -67,6 +68,7 @@ $(document).ready(function(){
 		    	$('.the-result').hide();
 		    }
 		});
+		 ***/
 	$('section').click(function(){
 		$('.the-result').hide();
 	})

@@ -48,7 +48,7 @@
     font-size:12px;
   }
   .cms-page a:hover{
-    color:#3898EC;
+    color:#3898EC; 
     text-decoration: underline;
   }
   .cms-page .more{
@@ -58,3 +58,130 @@
     color:#1abc9c;
     text-decoration: underline;
   }
+
+  .ui-autocomplete {
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    height: auto;
+    border:1px solid #222;
+    position:absolute;
+    /*font-family: Montserrat, sans-serif; */
+  }
+  li.ui-ac-item  {
+    margin-left: 2px;
+    width:300px !important;
+    border-bottom:1px solid #e0ddd7;
+    
+  }
+  li.ui-ac-item:last-child  {
+    border-bottom:none;
+  }
+
+
+    
+  .ui-ac-group {
+    font-weight:bold;
+    font-size-adjust: .7;
+    width: 300px !important;
+    border-bottom: 2px solid #d8a133;
+  }
+
+  .ui-ac-item-render {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform:capitalize;
+  }
+
+  .ui-state-focus:hover {
+    background-color: red !important;
+
+  }
+ .ui-act-item-meta nav {float:left;}
+
+ .ui-ac-item-render-content{
+  margin-left: 15px;
+  text-align: left;
+  }
+
+  .ui-ac-item-render-content h3 {
+    font-size: 12px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  li.ui-ac-item:hover ,.ui-ac-item-render:hover, .ui-ac-item-render-content:hover  {
+    background-color: rgb(250, 244, 244) !important;
+  }
+
+  .ui-act-item-meta ol {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  .ui-act-item-meta li {
+    display: inline;
+    text-transform: uppercase;
+    color: #a9a9a9;
+    /* white-space: nowrap should be moved to child A because IE fails to wrap resulting list completely */
+  }
+  .ui-act-item-meta li::before {
+    content: ' ';
+    /*
+    this content is important only for Crome in case the HTML will be minified with no whitespaces between </li><li>
+    */
+  }
+  .ui-act-item-meta li::after {
+    content: ' ';
+    white-space: normal;
+    word-spacing: 1em; 
+    background-image: radial-gradient(circle, black, black 7%, transparent 15%, transparent 35%, black 45%, black 48%, transparent 55%);
+    background-size: .5em .5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.5;
+
+  }
+  /*
+  no need to unset content of li:last-child, because it will be the trailing whitespace so it will collapse
+  */
+  /*
+  .ui-act-item-meta a {
+    white-space: nowrap; 
+    display: inline-block; 
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+    transition-property: background-color;
+    transition-duration: 500ms;
+  }
+  
+  .ui-act-item-meta a:hover {
+    background-color: #ccc;
+  }
+  */
+
+  /** required to override blue background on hover **/
+.ui-menu-item .ui-menu-item-wrapper:hover
+{
+    border: none !important;
+    background-color: red;
+}
+
+/*
+.ui-state-focus, .ui-state-hover .ui-state-highlight
+{
+    color:White;
+    background:#96B202 !important;
+    outline:none;
+}
+*/
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  color:White;
+  background: rgb(250, 244, 244) !important;
+}
