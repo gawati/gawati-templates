@@ -43,6 +43,7 @@ $(function () {
     
     $("#search").catcomplete({
         'minLength':3,
+        autoFocus: true,
         'source': function(request, response) {
             $.ajax({
                 url: '/gw/service/searchac/',
@@ -58,7 +59,7 @@ $(function () {
         },
         
         'select': function(event, ui) {
-            location.href = 'document.html?iri=' + ui.item.exprAbstract['expr-iri']
+            location.href = 'document.html?iri=' + ui.item.exprAbstract['expr-iri'];
             return false;
         }
     })
@@ -88,5 +89,13 @@ $(function () {
             .append(resultRow.join(''))
             .appendTo(ul);   
     };
+    // check for invalid enter key press
+    $("#search").keydown(function(event){
+        if(event.keyCode == 13) {
+            event.preventDefault();
+            event.stopPropagation();    
+            return false;
+        }
+     });
    
 });
