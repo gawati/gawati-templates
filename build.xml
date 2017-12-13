@@ -11,4 +11,18 @@
 		includes="themes/common/**, themes/design1/**, *.xml, LICENSE, *.md"
 		/>
     </target>
+    <target name="provide">
+        <fail message="Property &quot;dst&quot; must point at destination directory: -Ddst=/to/my/folder">
+            <condition>
+                <not>
+                    <isset property="dst"/>
+                </not>
+            </condition>
+        </fail>
+        <copy todir="${dst}" flatten="true">
+            <resources>
+                <file file="${build.dir}/${project.app}-${project.version}.zip"/>
+            </resources>
+        </copy>
+    </target>
 </project>
