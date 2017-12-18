@@ -21,5 +21,7 @@ pipeline {
                 cleanWs(cleanWhenAborted: true, cleanWhenNotBuilt: true, cleanWhenSuccess: true, cleanWhenUnstable: true, cleanupMatrixParent: true, deleteDirs: true)
             }
         }
+        post {
+        }
     }
 }
