@@ -25,4 +25,15 @@
             </resources>
         </copy>
     </target>
+    <target name="setlatest">
+        <fail message="Property &quot;dst&quot; must point at destination directory: -Ddst=/to/my/folder">
+            <condition>
+                <not>
+                    <isset property="dst"/>
+                </not>
+            </condition>
+        </fail>
+        <symlink link="${dst}/${project.app}-latest.xar" resource="${project.app}-${project.version}.xar" overwrite="true">
+        </symlink>
+    </target>
 </project>
