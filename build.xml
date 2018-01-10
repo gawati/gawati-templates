@@ -33,7 +33,7 @@
                 </not>
             </condition>
         </fail>
-        <symlink link="${dst}/${project.app}-latest.xar" resource="${project.app}-${project.version}.xar" overwrite="true">
+        <symlink link="${dst}/${project.app}-latest.zip" resource="${project.app}-${project.version}.zip" overwrite="true">
         </symlink>
     </target>
 </project>
